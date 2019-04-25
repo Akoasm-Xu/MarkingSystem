@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/input_px_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/dp_5">
+
+        <include layout="@layout/include_add_px_user" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/ColorWhite1"
+        android:elevation="@dimen/dp_5"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="设置评估内容" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/ColorBlack1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="评估内容K1:" />
+
+            <EditText
+                android:id="@+id/input_k1_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:foreground="?selectableItemBackground"
+                android:textColor="@color/ColorBlack1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="评估内容K2:" />
+
+            <EditText
+                android:id="@+id/input_k2_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:foreground="?selectableItemBackground"
+                android:textColor="@color/ColorBlack1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="评估内容K3:" />
+
+            <EditText
+                android:id="@+id/input_k3_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:foreground="?selectableItemBackground"
+                android:textColor="@color/ColorBlack1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/input_type_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/dp_10"
+            android:text="考核类型" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@color/ColorWhite1"
+        android:elevation="@dimen/dp_5"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="选定评估人" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/ColorBlack1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60">
+
+            <com.fhjs.casic.markingsystem.util.AutoBreakViewGroup
+                android:id="@+id/userViewGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp_10"
+                android:layout_gravity="center|left"
+                android:text="权重分配" />
+            <TextView
+                android:id="@+id/weight_confirm_text"
+                android:textColor="@color/ColorWhite1"
+                android:text="确认"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
+                android:background="@color/colorBlue2"
+                android:padding="@dimen/dp_10"
+                android:gravity="right|center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/weightViewGroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:alignmentMode="alignBounds"
+            android:columnCount="2"
+            android:columnOrderPreserved="true"
+            android:orientation="horizontal"
+            android:rowOrderPreserved="true" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

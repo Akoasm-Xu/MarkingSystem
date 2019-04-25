@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:background="@color/ColorWhite1">
+
+    <TextView
+        android:id="@+id/item_main_head_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toLeftOf="@+id/item_main_head_more"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="面试测评"
+        android:textColor="@color/colorBlue2"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/item_main_head_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dp_20"
+        android:singleLine="true"
+        android:text="2019年03月18日" />
+
+    <TextView
+        android:id="@+id/item_main_head_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_toRightOf="@+id/item_main_head_date"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dp_20"
+        android:singleLine="true"
+        android:text="4条数据" />
+
+    <ImageView
+        android:id="@+id/item_main_head_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_30"
+        android:src="@drawable/icon_more_right" />
+
+</RelativeLayout>

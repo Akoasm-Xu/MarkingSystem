@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorBlue2">
+
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:foreground="?android:selectableItemBackground"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/input_left_icon" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/title_image"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/App_Name"
+        android:textColor="@color/ColorWhite1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="提交"
+        android:foreground="?android:selectableItemBackground"
+        android:clickable="true"
+        android:textColor="@color/ColorWhite1" />
+</RelativeLayout>

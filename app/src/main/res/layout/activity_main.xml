@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorGray1"
+    tools:context=".view.activity.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_navigation">
+
+    </FrameLayout>
+
+
+    <View
+        android:layout_above="@+id/main_navigation"
+        android:background="@color/ColorGray1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RadioGroup
+        android:id="@+id/main_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ColorWhite1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_left_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:button="@null"
+            android:drawableTop="@drawable/main_list_selector"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_5" />
+
+        <RadioButton
+            android:id="@+id/main_center_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:button="@null"
+            android:drawableTop="@drawable/main_see_selector"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_5" />
+
+        <RadioButton
+            android:id="@+id/main_right_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:button="@null"
+            android:drawableTop="@drawable/main_setting_selector"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_5" />
+    </RadioGroup>
+
+</RelativeLayout>

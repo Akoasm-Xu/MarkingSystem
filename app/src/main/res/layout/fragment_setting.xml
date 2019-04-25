@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ColorGray1"
+    tools:context=".view.fragment.SettingFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+        <TextView
+            android:padding="@dimen/dp_10"
+            android:gravity="center|left"
+            android:text="用户"
+            android:background="@color/ColorWhite1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/setting_user_name"
+            android:padding="@dimen/dp_10"
+            android:gravity="center|right"
+            android:text="张三"
+            android:background="@color/ColorWhite1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="@color/ColorGray1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:foreground="?android:selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/setting_user_update"
+        android:padding="@dimen/dp_10"
+        android:gravity="center|left"
+        android:text="修改账户密码"
+        android:background="@color/ColorWhite1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <View
+        android:background="@color/ColorGray1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:id="@+id/setting_user_add"
+        android:padding="@dimen/dp_10"
+        android:gravity="center|left"
+        android:text="新建账号"
+        android:visibility="gone"
+        android:background="@color/ColorWhite1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <View
+        android:visibility="gone"
+        android:background="@color/ColorGray1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:id="@+id/setting_user_cache"
+        android:padding="@dimen/dp_10"
+        android:gravity="center|left"
+        android:text="清除缓存"
+        android:background="@color/ColorWhite1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <View
+        android:background="@color/ColorGray1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:id="@+id/setting_user_version"
+        android:padding="@dimen/dp_10"
+        android:gravity="center|left"
+        android:text="版本更新"
+        android:visibility="gone"
+        android:background="@color/ColorWhite1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <View
+        android:visibility="gone"
+        android:background="@color/ColorGray1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:id="@+id/setting_user_about"
+        android:padding="@dimen/dp_10"
+        android:gravity="center|left"
+        android:text="关于"
+        android:background="@color/ColorWhite1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <View
+        android:background="@color/ColorGray1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:id="@+id/setting_user_out"
+        android:padding="@dimen/dp_10"
+        android:gravity="center"
+        android:textColor="@color/ColorRed2"
+        android:text="退出登录"
+        android:background="@color/ColorWhite1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <View
+        android:background="@color/ColorGray1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"/>
+</LinearLayout>

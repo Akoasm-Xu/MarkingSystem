@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlue2"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.LoginActivity">
+
+   <LinearLayout
+       android:layout_marginTop="@dimen/dp_50"
+       android:layout_marginLeft="@dimen/dp_20"
+       android:layout_marginRight="@dimen/dp_20"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <ImageView
+           android:elevation="@dimen/dp_10"
+           android:background="@drawable/login_image_logo"
+           android:layout_marginBottom="@dimen/dp_20"
+           android:layout_gravity="center"
+           android:src="@drawable/app_logo"
+           android:tint="@color/colorBlue2"
+           android:layout_width="@dimen/dp_60"
+           android:layout_height="@dimen/dp_60" />
+       <EditText
+           android:id="@+id/login_name_edit"
+           android:hint="账号"
+           android:background="@drawable/login_edit"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dp_50" />
+       <View
+           android:background="@color/ColorGray2"
+           android:layout_width="match_parent"
+           android:layout_height="1dp"/>
+       <EditText
+           android:id="@+id/login_pwd_edit"
+           android:hint="密码"
+           android:inputType="textPassword"
+           android:background="@drawable/login_edit"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dp_50" />
+
+       <Button
+           android:foreground="?android:selectableItemBackground"
+           android:id="@+id/login_but"
+           android:textSize="16sp"
+           android:layout_marginTop="@dimen/dp_20"
+           android:text="@string/login"
+           android:textColor="@color/ColorWhite2"
+           android:background="@color/ColorButton"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dp_50" />
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dp_40">
+           <TextView
+               android:id="@+id/login_forget_password"
+               android:textColor="@color/ColorGray2"
+               android:gravity="center|left"
+               android:text="@string/forget_password"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="match_parent" />
+           <TextView
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="match_parent" />
+           <TextView
+               android:id="@+id/login_register"
+               android:gravity="center|right"
+               android:text="@string/register"
+               android:textColor="@color/ColorWhite1"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="match_parent" />
+       </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#007FFF</color>
+    <color name="colorPrimaryDark">#0072E5</color>
+    <color name="colorAccent">#468aef</color>
+    <color name="colorBlue1">#38b9d2</color>
+    <color name="colorBlue2">#007FFF</color>
+    <color name="colorBlue3">#0462c2</color>
+    <color name="colorGreen1">#6fbe26</color>
+    <color name="colorGreen2">#40a60c</color>
+    <color name="colorGreen3">#0be94e</color>
+    <!--背景色-->
+    <color name="ColorGray1">#eaeaea</color>
+    <color name="ColorGray2">#bfbfbf</color>
+    <color name="ColorGray3">#A6A6A6</color>
+    <color name="ColorWhite1">#ffffff</color>
+    <color name="ColorWhite2">#e8ecf1</color>
+    <color name="ColorWhite3">#d3d6dc</color>
+    <color name="ColorRed1">#e76059</color>
+    <color name="ColorRed2">#b62f3c</color>
+    <color name="ColorRed3">#f21004</color>
+    <color name="ColorBlack1">#4d4c4c</color>
+    <color name="ColorBlack2">#2b2a2a</color>
+    <color name="ColorBlack3">#0d0d0d</color>
+    <color name="ColorOrange1">#f66600</color>
+    <color name="ColorOrange2">#f29705</color>
+    <color name="ColorYellow1">#F4CD49</color>
+    <color name="ColorYellow2">#fffb00</color>
+    <color name="ColorTransparent1">#00000000</color>
+    <color name="ColorTransparent2">#2f000000</color>
+    <color name="ColorTransparent3">#6c000000</color>
+    <color name="ColorButton">#34044689</color>
+</resources>

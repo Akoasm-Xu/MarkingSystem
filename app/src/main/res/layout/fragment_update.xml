@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragment.UpdateFragment">
+<include layout="@layout/pub_title"/>
+    <!-- TODO: Update blank fragment layout -->
+  <LinearLayout
+      android:layout_margin="@dimen/dp_20"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <EditText
+          android:id="@+id/update_old_pwd_edit"
+          android:hint="原密码"
+          android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+          android:inputType="textPassword"
+          android:textSize="14sp"
+          android:background="@drawable/login_edit"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_40" />
+      <EditText
+          android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+          android:inputType="textPassword"
+          android:id="@+id/update_new_pwd_edit"
+          android:hint="新密码"
+          android:textSize="14sp"
+          android:layout_marginTop="@dimen/dp_10"
+          android:background="@drawable/login_edit"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_40" />
+      <EditText
+          android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+          android:inputType="textPassword"
+          android:id="@+id/update_again_new_pwd_edit"
+          android:hint="确认新密码"
+          android:textSize="14sp"
+          android:layout_marginTop="@dimen/dp_10"
+          android:background="@drawable/login_edit"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_40" />
+  </LinearLayout>
+
+</LinearLayout>

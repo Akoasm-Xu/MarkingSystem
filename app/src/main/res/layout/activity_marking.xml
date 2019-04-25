@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".view.activity.MarkingActivity">
+
+    <include layout="@layout/pub_title" />
+
+    <include layout="@layout/include_cardview_info" />
+
+    <TextView
+        android:id="@+id/marking_interview_more"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:textColor="@color/ColorBlack1"
+        android:text="@string/mark_tips" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/ColorBlack1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="仪表形象："
+                    android:textSize="16sp" />
+
+                <RatingBar
+                    android:id="@+id/marking_rb_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:numStars="5" />
+
+                <TextView
+                    android:id="@+id/marking_text_1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:minWidth="@dimen/dp_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="0.0" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="表达能力："
+                    android:textSize="16sp" />
+
+                <RatingBar
+                    android:id="@+id/marking_rb_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:numStars="5" />
+
+                <TextView
+                    android:id="@+id/marking_text_2"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:minWidth="@dimen/dp_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="0.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="工作态度："
+                    android:textSize="16sp" />
+
+                <RatingBar
+                    android:id="@+id/marking_rb_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:numStars="5" />
+
+                <TextView
+                    android:id="@+id/marking_text_3"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:minWidth="@dimen/dp_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="0.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="岗位能力："
+                    android:textSize="16sp" />
+
+                <RatingBar
+                    android:id="@+id/marking_rb_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:numStars="5" />
+
+                <TextView
+                    android:id="@+id/marking_text_4"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:minWidth="@dimen/dp_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="0.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="综合素质："
+                    android:textSize="16sp" />
+
+                <RatingBar
+                    android:id="@+id/marking_rb_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:numStars="5" />
+
+                <TextView
+                    android:id="@+id/marking_text_5"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:minWidth="@dimen/dp_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="0.0" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/marking_conclusion_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_20"
+                android:hint="评语及录用建议(选填)"
+                android:paddingLeft="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/marking_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="right" />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

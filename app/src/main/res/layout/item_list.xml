@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:background="@color/ColorWhite1"
+    android:clickable="true"
+    android:foreground="?android:selectableItemBackground"
+    android:padding="@dimen/dp_10">
+
+    <TextView
+
+        android:id="@+id/item_list_top_left"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="top_left"
+        android:textColor="@color/colorBlue2"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/item_list_top_center"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/item_list_top_left"
+
+        android:gravity="center"
+        android:text="top_center" />
+
+    <TextView
+        android:id="@+id/item_list_below_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_list_top_left"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="below_left" />
+
+    <TextView
+        android:id="@+id/item_list_below_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_list_top_left"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:text="below_right" />
+    <CheckBox
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/item_list_center_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
